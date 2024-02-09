@@ -1,0 +1,132 @@
+/*#####################--##################--####################//
+//                                                               //
+//                                                               //
+//                     Created by: Gabtosin                      //
+//                                                               //
+//                                                               //
+//###################--##################--####################--*/
+
+body {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+/* Buttons */
+
+#buttons-container button {
+    border: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+}
+
+/* Game */
+
+#container {
+    display: flex;
+    width: 300px;
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    height: 100px;
+    border: 5px solid #000;
+    box-sizing: border-box;
+    flex:1 1 33%;
+}
+
+
+/* Game: Erasing borders cuz we have to */
+
+#block-1, #block-2, #block-3 {
+    border-top: none;
+}
+
+#block-1, #block-4, #block-7 {
+    border-left: none;
+}
+
+#block-7, #block-8, #block-9 {
+    border-bottom: none;
+}
+
+#block-3, #block-6, #block-9 {
+    border-right: none;
+}
+
+/* Symbols */
+
+.x {
+    font-size: 65px;
+    color:blueviolet;
+    display: inline-block;
+    line-height: 100px;
+}
+
+.o {
+    width: 50px;
+    height: 50px;
+    border: 5px solid yellowgreen;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 17px;
+}
+
+/* Hide class */
+
+.hide {
+    display: none !important;
+}
+
+/* ScoreBoard */
+
+#scoreboard-container {
+    font-size: bold;
+    margin-top: 30px;
+    font-size: 25px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.score-box {
+    margin: 0 20px;
+}
+
+#x-scoreboard {
+    color: blueviolet;
+    margin-right: 3px;
+}
+
+#o-scoreboard {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid yellowgreen;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+
+/* Victory Message */
+
+#message p {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 150px;
+    width: 500px;
+    font-size: 50px;
+    background-color: palegreen;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
